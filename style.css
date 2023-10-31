@@ -5,17 +5,19 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: cadetblue;
+    margin: 0;
+    font-family: 'Raleway';
 }
 header {
-    background-color: aqua;
-    width: 100vw;
+    background-color: transparent;
+    width: auto;
     height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: initial;
     flex-direction: column;
-    box-shadow: 0 0 10px aqua; 
+
 }
 footer {
     background-color: black;
@@ -31,32 +33,79 @@ footer {
     padding: 10px;
     box-shadow: 0 0 10px aqua; 
 }
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .navbar {
     background-color: aqua;
     width: 80vw;
+    height: 6vh;
     border: 2px;
     border-radius: 12px;
-    padding: 5px;
+    padding: 2px;
+    margin-top: 50px;
     position: fixed;
-    text-align: center;
     z-index: 1;
-    box-shadow: 0 0 5px aqua; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px aqua; 
 }
+.profile-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilities-container {
+    height: 80vh;
+    width: 100vw;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.welcome-message {
+    color: aliceblue;
+    margin-right: 20px;
+}
+.welcome-name {
+    background: linear-gradient(
+        -225deg,
+        #231557 0%, 
+        #44107a 30%, 
+        #ff1361 60%, 
+        #fff800 120%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: auto;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
 
 .profile-description {
     background-color: aquamarine;
     width: 60vw;
     text-align: justify;
     padding: 50px;
-    margin: 20px 0px 10px 0px;
 }
 
 .profile-habilities {
