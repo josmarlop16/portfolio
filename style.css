@@ -1,0 +1,85 @@
+html,
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+}
+header {
+    background-color: aqua;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 10px aqua; 
+}
+footer {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px aqua; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: aqua;
+    width: 80vw;
+    border: 2px;
+    border-radius: 12px;
+    padding: 5px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 0 5px aqua; 
+}
+
+.profile-description {
+    background-color: aquamarine;
+    width: 60vw;
+    text-align: justify;
+    padding: 50px;
+    margin: 20px 0px 10px 0px;
+}
+
+.profile-habilities {
+    background-color: bisque;
+    width: auto;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.profile-projects {
+    background-color: brown;
+    width: auto;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.profile-contact {
+    background-color: blue;
+    width: auto;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
