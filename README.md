@@ -1,2 +1,2 @@
-# portfolio
-This is my personal portfolio, where you can get to know me in a really interactive way.
+# Portfolio
+This is my personal portfolio, where you can get to know me in an interactive way. Hope you enjoy your experience!!
