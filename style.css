@@ -28,6 +28,11 @@ main {
     padding-bottom: 3em;
     margin: 0;
 }
+
+.vertical-line {
+    height: 20vh;
+    transform: rotate(180deg);
+}
 .short-description {
     width: 25vw;
     height: fit-content;
