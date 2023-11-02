@@ -16,17 +16,17 @@ main {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
 }
-#contact-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #524944;
-}
+
 .main-header {
     background-color: #524944;
     color:antiquewhite;
@@ -41,12 +41,24 @@ main {
     align-items: center;
     margin: 0;
 }
+@media (max-width: 768px) {
+    .main-header {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 90vh;
+    }
+}
 
 .vertical-line {
     height: 20vh;
     transform: rotate(180deg);
     border: 1px solid antiquewhite;
     margin: 0;
+    @media(max-width: 768px) {
+        display: none;
+    }
 }
 .horizontal-line {
     border: 1px solid black;
@@ -57,6 +69,13 @@ main {
     padding: 1em;
     text-align: justify;
     margin-left: 10em;
+    @media(max-width: 768px) {
+        padding: 1em;
+        margin-left: 0em;
+        width: 80vw;
+        height: fit-content;
+        text-align: justify;
+    }
 }
 .main-menu {
     height: 100vh;
@@ -67,6 +86,15 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 6em;
+    @media(max-width: 768px) {
+        margin: 0;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .menu-link {
     list-style: none;
@@ -75,6 +103,9 @@ main {
     transition: background 0.3s;
     color: #524944;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        font-size: 0.5em;
+    }
 }
 .menu-link:hover {
     background-image: linear-gradient(
@@ -110,27 +141,7 @@ main {
     color: antiquewhite;
     font-family: 'Cormorant Garamond', serif;
 }
-.navbar-link:hover {
-    background-image: linear-gradient(
-        -225deg,
-        #000000 0%,
-        #55463c 29%,
-        #875339 67%,
-        #d2cc2a 100%
-    );
-    background-size: 200% auto;
-    color: antiquewhite;
-    background-clip: initial;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
-    display: inline-block;
-}
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
+
 .navbar-link:visited {
     color: antiquewhite;
 }
@@ -283,6 +294,16 @@ main {
     animation: pulse 1s infinite;
 }
 
+#contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #524944;
+}
 .contact-description {
     width: 50vw;
     height: 100vh;
