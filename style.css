@@ -249,11 +249,10 @@ main {
     transition: width 0.3s, height 0.3s;
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
-        margin-bottom: 7em;
+        margin-bottom: 4em;
         width: 40vw;
         height: 5%;
         font-size: large;
-        
     }
     
 }
@@ -294,7 +293,8 @@ main {
     align-items: flex-start;
     @media(max-width: 768px) {
         display: flex;
-        margin-top: -47em;
+        margin: -36em 0em 0em 10em;
+       
     }
 }
 
@@ -325,7 +325,7 @@ main {
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
         font-size: 5em;
-        margin-top: 3em;
+        margin-top: 4em;
     }
 }
 .skill-main {
@@ -341,6 +341,7 @@ main {
         margin-left: 0em;
         width: 80vw;
         height: 100vh;
+        margin-bottom: 3em;
     }
 }
 .skills-habilities {
@@ -356,12 +357,11 @@ main {
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 2em;
     @media(max-width: 768px) {
+        grid-gap: 1em;
         margin-left: 0em;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        margin-bottom: 2em;
+        padding: 2em 0em 2em 0em;
     }
 }
 
@@ -371,6 +371,7 @@ main {
     @media(max-width: 768px) {
         max-width: 60px;
         max-height: auto;
+        margin-left: 1.5em;
     }
 }
 
