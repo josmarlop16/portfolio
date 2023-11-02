@@ -8,6 +8,7 @@ body {
     font-family: 'Raleway';
     background-color: antiquewhite;
 }
+/* Main section */
 main {
     display: flex;
     flex-direction: row;
@@ -26,7 +27,6 @@ main {
         width: 100vw;
     }
 }
-
 .main-header {
     background-color: #524944;
     color:antiquewhite;
@@ -89,7 +89,7 @@ main {
     @media(max-width: 768px) {
         margin: 0;
         width: 100vw;
-        height: fit-content;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -104,7 +104,7 @@ main {
     color: #524944;
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 }
 .menu-link:hover {
@@ -130,7 +130,7 @@ main {
     }
 }
 .menu-link:visited {
-    color: 524944;
+    color: #524944;
 }
 
 .navbar-link {
@@ -151,6 +151,11 @@ main {
     width: 38vw;
     height: 100vh;
     margin-left: 10em;
+    @media(max-width: 768px) {
+        width: 80vw;
+        height: 100vh;
+        margin-left: 0em;
+    }
 }
 .about-title {
     color: #524944;
@@ -158,16 +163,26 @@ main {
     margin: 0;
     margin-top: 1em;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        font-size: 4em;
+        margin-top: 2em;
+    }
 }
 .about-subtitle {
     color: black;
     font-size: 1.5em;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        font-size: 1em;
+    }
 }
 .about-main {
     text-align: justify;
     color: #000000;
     font-size: large;
+    @media(max-width: 768px) {
+        font-size: small;
+    }
 }
 
 .cv-button {
@@ -185,6 +200,11 @@ main {
     border-radius: 30px;
     transition: width 0.3s, height 0.3s;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        width: 40vw;
+        height: 5%;
+        font-size: large;
+    }
 }
 .cv-button:hover {
     width: 50%;
@@ -228,6 +248,14 @@ main {
     border-radius: 30px;
     transition: width 0.3s, height 0.3s;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        margin-bottom: 7em;
+        width: 40vw;
+        height: 5%;
+        font-size: large;
+        
+    }
+    
 }
 .contact-button:hover {
     width: 55%;
@@ -264,12 +292,56 @@ main {
     height: auto;
     margin: -14em 0em 0em 10em;
     align-items: flex-start;
+    @media(max-width: 768px) {
+        display: flex;
+        margin-top: -47em;
+    }
 }
 
+/* Skill section */
+#skill-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+.skill-title {
+    color: #524944;
+    font-size: 8em;
+    margin: 0;
+    margin-top: 1em;
+    font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        font-size: 5em;
+        margin-top: 3em;
+    }
+}
+.skill-main {
+    text-align: justify;
+    color: black;
+    font-size: medium;
+}
 .skill-description {
     width: 35vw;
     height: 100vh;
     margin-left: 16em;
+    @media(max-width: 768px) {
+        margin-left: 0em;
+        width: 80vw;
+        height: 100vh;
+    }
 }
 .skills-habilities {
     width: 42vw;
@@ -283,17 +355,30 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 2em;
+    @media(max-width: 768px) {
+        margin-left: 0em;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
 }
 
 .skills-content-img {
     max-width: 100px;
     max-height: auto;
+    @media(max-width: 768px) {
+        max-width: 60px;
+        max-height: auto;
+    }
 }
 
 .profile-skills-content-img:hover {
     animation: pulse 1s infinite;
 }
 
+/* Contact section */
 #contact-page {
     display: flex;
     flex-direction: row;
@@ -303,12 +388,27 @@ main {
     height: 100vh;
     width: 100vw;
     background-color: #524944;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
 }
+
 .contact-description {
     width: 50vw;
     height: 100vh;
     margin: 0;
     margin-right: 9em;
+    @media(max-width: 768px) {
+        margin: 2em;
+        height: 100vh;
+        width: 80vw;
+    }
 }
 .contact-title {
     color: antiquewhite;
@@ -316,6 +416,10 @@ main {
     margin: 0;
     margin-top: 1em;
     font-family: 'Cormorant Garamond', serif;
+    @media(max-width: 768px) {
+        font-size: 5em;
+        margin-top: 1.5em;
+    }
 }
 .contact-subtitle {
     color: antiquewhite;
@@ -337,4 +441,9 @@ main {
 .contact-email-link:visited {
     text-decoration: none;
     color: antiquewhite;
+}
+.animation{
+    @media(max-width: 768px) {
+        display: none;
+    }
 }
