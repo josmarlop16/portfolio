@@ -14,24 +14,29 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .main-header {
     background-color: burlywood;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     width: 5vw;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
     align-items: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
     margin: 0;
 }
 
 .vertical-line {
     height: 20vh;
     transform: rotate(180deg);
+    border: 1px solid black;
+    margin: 0;
+}
+.horizontal-line {
+    border: 1px solid black;
 }
 .short-description {
     width: 25vw;
@@ -83,35 +88,74 @@ main {
 }
 
 /* About section */
-
-.about {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 97vw;
-}
-
 .about-description {
-    width: 50vw;
-    height: auto;
-    padding: 3em;
+    width: 35vw;
+    height: 100vh;
+    margin-left: 18em;
 }
-
 .about-title {
     text-transform: uppercase;
     color: #000000;
-    font-size: 7em;
+    font-size: 9.8em;
+    margin: 0;
+    margin-top: 1em;
 }
-
+.about-subtitle {
+    color: #000000;
+    font-size: 1.5em;
+}
 .about-main {
     text-align: justify;
     color: #000000;
     font-size: large;
 }
-
+.about-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+}
+.about-social-icon-img {
+    width: 50px;
+    height: 50px;
+}
+.about-social-icon-img:hover {
+    height: 55px;
+    width: 55px;
+    animation: pulse 4s infinite;
+}
 .profile-img {
     width: 25vw;
     height: auto;
-    margin: 3em;
-    margin-left: 6em;
+    margin: -14em 0em 0em 10em;
+    align-items: flex-start;
+}
+
+.skill-description {
+    width: 35vw;
+    height: 100vh;
+    margin-left: 18em;
+}
+.skills-habilities {
+    width: 42vw;
+    height: 100vh;
+    background-color: burlywood;
+    padding: 0em 0em 0em 3em;
+    margin-left: 3em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2em;
+}
+
+.skills-content-img {
+    max-width: 100px;
+    max-height: auto;
+}
+
+.profile-skills-content-img:hover {
+    animation: pulse 1s infinite;
 }
