@@ -289,7 +289,7 @@ main {
     animation: pulse 4s infinite;
 }
 .profile-img {
-    width: 25vw;
+    width: 20vw;
     height: auto;
     margin: -14em 0em 0em 10em;
     align-items: flex-start;
