@@ -165,7 +165,7 @@ main {
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
         font-size: 4em;
-        margin-top: 2em;
+        margin-top: 20%;
     }
 }
 .about-subtitle {
@@ -192,6 +192,7 @@ main {
     font-size: 30px;
     text-align: center;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     background-color: #55463c;
@@ -202,7 +203,7 @@ main {
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
         width: 40vw;
-        height: 5%;
+        height: 8%;
         font-size: large;
     }
 }
@@ -238,6 +239,7 @@ main {
     height: 8%;
     font-size: 30px;
     margin-bottom: 2em;
+    cursor: pointer;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -249,9 +251,9 @@ main {
     transition: width 0.3s, height 0.3s;
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
-        margin-bottom: 4em;
+        margin-bottom: 10%;
         width: 40vw;
-        height: 5%;
+        height: 8%;
         font-size: large;
     }
     
@@ -292,9 +294,7 @@ main {
     margin: -14em 0em 0em 10em;
     align-items: flex-start;
     @media(max-width: 768px) {
-        display: flex;
-        margin: -36em 0em 0em 10em;
-       
+        display: none;
     }
 }
 
@@ -325,7 +325,7 @@ main {
     font-family: 'Cormorant Garamond', serif;
     @media(max-width: 768px) {
         font-size: 5em;
-        margin-top: 4em;
+        margin-top: 50%;
     }
 }
 .skill-main {
@@ -340,8 +340,9 @@ main {
     @media(max-width: 768px) {
         margin-left: 0em;
         width: 80vw;
-        height: 100vh;
-        margin-bottom: 3em;
+        min-height: 100vh;
+        margin-bottom: 0%;
+        margin-top: 70%;
     }
 }
 .skills-habilities {
@@ -356,27 +357,42 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 2em;
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-gap: 1em;
         margin-left: 0em;
-        width: 100%;
-        height: 100vh;
-        padding: 2em 0em 2em 0em;
+        width: 90%;
+        height: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
-
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .skills-content-img {
     max-width: 100px;
     max-height: auto;
-    @media(max-width: 768px) {
-        max-width: 60px;
+    @media (max-width: 768px) {
+        max-width: 50%;
         max-height: auto;
-        margin-left: 1.5em;
+        margin-left: 0em;
     }
 }
-
-.profile-skills-content-img:hover {
-    animation: pulse 1s infinite;
+.skills-content-img:hover {
+    animation: zoomIn 2s infinite;
 }
 
 /* Contact section */
@@ -442,6 +458,17 @@ main {
 .contact-email-link:visited {
     text-decoration: none;
     color: antiquewhite;
+}
+.empathy-link {
+    text-decoration: underline;
+    color: #000000;
+}
+.empathy-link:hover {
+    text-decoration: none;
+}
+.empathy-link:visited {
+    text-decoration: none;
+    color: #000000;
 }
 .animation{
     @media(max-width: 768px) {
