@@ -64,7 +64,7 @@ main {
     border: 1px solid black;
 }
 .short-description {
-    width: 25vw;
+    width: 40vw;
     height: fit-content;
     padding: 1em;
     text-align: justify;
