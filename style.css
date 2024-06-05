@@ -295,6 +295,7 @@ main {
     }
 }
 
+
 /* Skill section */
 .skill-title {
     color: #524944;
@@ -452,6 +453,7 @@ main {
     color: #000000;
 }
 .animation{
+    min-width: 20vw;
     @media(max-width: 768px) {
         display: none;
     }
